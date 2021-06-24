@@ -209,6 +209,7 @@ namespace SumoLogic.Logging.Common.Sender
         /// <param name="host">The message host.</param>
         public async Task TrySend(string body, string name, string category, string host)
         {
+            throw new OperationCanceledException("hi 😎😎😎😎😎");
             if (this.Url == null)
             {
                 if (this.Log.IsWarnEnabled)
